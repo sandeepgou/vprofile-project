@@ -24,8 +24,6 @@ pipeline {
                 sh 'mvn clean install -DskipTests'
             }
 
-                }
-            }
-        }
-   
-}
+              }
+      }
+   }

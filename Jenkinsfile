@@ -20,14 +20,14 @@ pipeline {
 	SONARSCANNER = 'sonarscanner'
     }
 	
-    stages{
-        stage('BUILD'){
+    stages {
+        stage('BUILD') {
             steps {
                 sh 'mvn clean install -DskipTests'
             }
 
               }
-       stage ('Sonar Analysis'){
+       stage('Sonar Analysis') {
         environment {
             scannerHome = tool "${SONARSCANNER}"
         steps {
